@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Email Safety</title>
+  <style>
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: Arial, sans-serif;
+   }
+
+   body {
+     background: #f8f9fc;
+     color: #333;
+     line-height: 1.6;
+   }
+
+    /* Navbar */
+    .navbar {
+      background: rgba(155, 89, 182, 0.7);
+      backdrop-filter: blur(10px);
+      color: white;
+      padding: 20px 50px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      font-size: 18px;
+      height:70px;
+    }
+
+    .navbar .logo a {
+      color: #fff;
+      font-size: 22px;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .navbar .nav-links {
+      list-style: none;   
+      display: flex;
+      gap: 20px;
+    }
+
+     .navbar .nav-links a {
+     text-decoration: none;
+     color: white;
+     font-size: 18px;
+     font-weight: bold;
+     transition: color 0.3s ease;
+   }
+
+
+    .navbar .nav-links a:hover {
+      color: #a66ac5;
+    }
+
+    /* Main Course Container */
+    .course-container {
+     max-width: 900px;
+     margin: 100px auto 40px; /* top margin for navbar space */
+     padding: 20px;
+     background: #fff;
+     border-radius: 12px;
+     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+   }
+
+   .course-container h1 {
+     font-size: 28px;
+     margin-bottom: 15px;
+     color: #2c3e50;
+   }
+
+   .intro {
+     font-size: 18px;
+     margin-bottom: 25px;
+     color: #555;
+   }
+
+    /* Lesson */
+    .lesson {
+     margin-bottom: 25px;
+   }
+
+   .lesson h2 {
+     font-size: 22px;
+     margin-bottom: 10px;
+     color: #3498db;
+   }
+
+   .lesson p {
+     font-size: 16px;
+     color: #444;
+   }
+
+   .lesson ul {
+     margin-left: 20px;
+     list-style: disc;
+   }
+
+    /* Images */
+    .lesson img {
+      display: block;
+      margin: 15px auto;
+      width: 80%;
+      max-width: 500px;
+      border-radius: 8px;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+    }
+
+    /* Tips */
+    .tips {
+     background: #eaf6ff;
+     border-left: 5px solid #3498db;
+     padding: 15px;
+     margin: 20px 0;
+     border-radius: 8px;
+   }
+
+   .quiz {
+     background: #fff3cd;
+     border-left: 5px solid #ff9800;
+     padding: 15px;
+     margin: 20px 0;
+     border-radius: 8px;
+   }
+
+    /* Navigation buttons */
+    .nav-buttons {
+     display: flex;
+     justify-content: space-between;
+     margin-top: 30px;
+   }
+
+   .btn {
+     padding: 12px 20px;
+     border-radius: 8px;
+     text-decoration: none;
+     font-weight: bold;
+     transition: 0.3s;
+   }
+
+   .btn.back {
+     background: #bdc3c7;
+     color: #2c3e50;
+   }
+
+   .btn.back:hover {
+     background: #95a5a6;
+   }
+
+   .btn.next {
+     background: #3498db;
+     color: white;
+   }
+
+   .btn.next:hover {
+     background: #2980b9;
+   }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo"><a href="index.html">📚 Micro-Courses Platform</a></div>
+      <ul class="nav-links">
+        <li><a href="courses.html">Courses</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="course-container">
+    <h1>📧 Email Safety</h1>
+    <p class="intro">Emails are the most common way hackers trick people into sharing information. This lesson will teach you how to spot scams, avoid phishing, and keep your inbox safe.</p>
+
+    <section class="lesson">
+      <h2>Step 1: Recognize Phishing Emails</h2>
+      <p>Phishing emails pretend to be from trusted organizations (banks, delivery services, or even friends) to steal your details.</p>
+      <ul class="tips">
+        <li>Look for spelling mistakes and unusual requests.</li>
+        <li>Check the sender’s email address carefully.</li>
+        <li>Never click suspicious links or attachments.</li>
+      </ul>
+      <img src="https://images.unsplash.com/photo-1590650046871-92c887180603" alt="Phishing Email">
+    </section>
+
+    <section class="lesson">
+      <h2>Step 2: Don’t Share Sensitive Info</h2>
+      <p>Legitimate companies will never ask you to share passwords, PINs, or credit card details via email.</p>
+      <ul class="tips">
+        <li>Ignore emails asking for confidential details.</li>
+        <li>If unsure, contact the company directly via their official website.</li>
+      </ul>
+      <img src="https://images.unsplash.com/photo-1605902711622-cfb43c4437b5" alt="Confidential Data Security">
+    </section>
+
+    <section class="lesson">
+      <h2>Step 3: Use Spam Filters</h2>
+      <p>Email providers like Gmail and Outlook have built-in spam filters that block suspicious messages. Make sure they are turned on.</p>
+      <ul class="tips">
+        <li>Mark suspicious emails as spam instead of deleting them.</li>
+        <li>Check your spam folder occasionally for false positives.</li>
+      </ul>
+      <img src="https://images.unsplash.com/photo-1556740749-887f6717d7e4" alt="Spam Email Filter">
+    </section>
+
+    <section class="lesson">
+      <h2>Step 4: Keep Email Accounts Secure</h2>
+      <p>Protect your email account itself—because if hackers get in, they can reset passwords for everything else you own.</p>
+      <ul class="tips">
+        <li>Enable Two-Factor Authentication (2FA).</li>
+        <li>Use a unique, strong password for your email account.</li>
+        <li>Log out from public computers after use.</li>
+      </ul>
+      <div class="img-box">
+  <img src="https://i.ibb.co/kQp5QYv/email-security.png" alt="Email Security Lock">
+</div>
+</section>
+
+<section class="lesson">
+  <h2>Step 5: Beware of Attachments & Links</h2>
+  <p>Many email viruses are spread through infected files and links that lead to fake websites.</p>
+  <ul class="tips">
+    <li>Only open attachments from people you trust.</li>
+    <li>Hover over links to check their real destination before clicking.</li>
+    <li>If it feels suspicious, don’t click!</li>
+  </ul>
+<div class="img-box">
+  <img src="https://i.ibb.co/N7M8PbM/suspicious-links.png" alt="Suspicious Links in Emails">
+</div>
+
+
+    <div class="nav-buttons">
+      <a href="docs.html" class="btn next">Next ➡</a>
+    </div>
+  </main>
+</body>
+</html>
+
