@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Excel Basics</title>
+  <style>
+    * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: Arial, sans-serif;
+   }
+
+   body {
+     background: #f8f9fc;
+     color: #333;
+     line-height: 1.6;
+   }
+
+    /* Navbar */
+    .navbar {
+      background: rgba(155, 89, 182, 0.7);
+      backdrop-filter: blur(10px);
+      color: white;
+      padding: 20px 50px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      font-size: 18px;
+      height: 70px;
+    }
+
+    .navbar .logo a {
+      color: #fff;
+      font-size: 24px;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .navbar .nav-links {
+      list-style: none;   
+      display: flex;
+      gap: 25px;
+    }
+
+    .navbar .nav-links a {
+     text-decoration: none;
+     color: white;
+     font-size: 18px;
+     font-weight: bold;
+     transition: color 0.3s ease;
+   }
+
+
+    .navbar .nav-links a:hover {
+      color: #a66ac5;
+    }
+
+    /* Main Course Container */
+    .course-container {
+     max-width: 900px;
+     margin: 100px auto 40px; /* top margin for navbar space */
+     padding: 20px;
+     background: #fff;
+     border-radius: 12px;
+     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+   }
+
+   .course-container h1 {
+     font-size: 28px;
+     margin-bottom: 15px;
+     color: #2c3e50;
+   }
+
+   .intro {
+     font-size: 18px;
+     margin-bottom: 25px;
+     color: #555;
+   }
+
+    /* Lesson Box */
+    .lesson {
+     margin-bottom: 25px;
+   }
+
+   .lesson h2 {
+     font-size: 22px;
+     margin-bottom: 10px;
+     color: #3498db;
+   }
+
+   .lesson p {
+     font-size: 16px;
+     color: #444;
+   }
+
+   .lesson ul {
+     margin-left: 20px;
+     list-style: disc;
+   }
+
+    /* Images */
+    .lesson img {
+      display: block;
+      margin: 20px auto;
+      width: 80%;
+      max-width: 500px;
+      border-radius: 8px;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+    }
+
+    /* Tips & Quiz boxes */
+    .tips {
+     background: #eaf6ff;
+     border-left: 5px solid #3498db;
+     padding: 15px;
+     margin: 20px 0;
+     border-radius: 8px;
+   }
+
+   .quiz {
+     background: #fff3cd;
+     border-left: 5px solid #ff9800;
+     padding: 15px;
+     margin: 20px 0;
+     border-radius: 8px;
+   }
+
+    /* Navigation buttons */
+    .nav-buttons {
+     display: flex;
+     justify-content: space-between;
+     margin-top: 30px;
+   }
+
+   .btn {
+     padding: 12px 20px;
+     border-radius: 8px;
+     text-decoration: none;
+     font-weight: bold;
+     transition: 0.3s;
+   }
+
+   .btn.back {
+     background: #bdc3c7;
+     color: #2c3e50;
+   }
+
+   .btn.back:hover {
+     background: #95a5a6;
+   }
+
+   .btn.next {
+     background: #3498db;
+     color: white;
+   }
+
+   .btn.next:hover {
+     background: #2980b9;
+   }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo"><a href="index.html">📚 Micro-Courses Platform</a></div>
+      <ul class="nav-links">
+        <li><a href="courses.html">Courses</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="course-container">
+    <h1>📊 Excel Basics</h1>
+    <p class="intro">Master the fundamentals of Microsoft Excel to organize data, perform calculations, and create professional reports.</p>
+
+    <section class="lesson">
+      <h2>Step 1: Create a Spreadsheet</h2>
+      <p>Open Excel and start a new spreadsheet. Data is stored in rows (horizontal) and columns (vertical). Each box is called a <b>cell</b>.</p>
+      <div class="tips">💡 Example: Type student names in column A and their scores in column B.</div>
+      <img src="https://i.ibb.co/3v1JhN2/excel-sheet.png" alt="Excel Sheet Example">
+    </section>
+
+    <section class="lesson">
+      <h2>Step 2: Basic Formulas</h2>
+      <p>Excel is powerful because of its formulas. Start every formula with an <b>=</b> sign.</p>
+      <div class="tips">
+        👉 <b>=SUM(A1:A5)</b> → Adds all numbers in cells A1 to A5. <br>
+        👉 <b>=AVERAGE(B1:B5)</b> → Finds the average of values in B1 to B5. <br>
+        👉 <b>=MAX(B1:B5)</b> → Returns the highest value. <br>
+        👉 <b>=MIN(B1:B5)</b> → Returns the lowest value.
+      </div>
+      <img src="https://i.ibb.co/VWw2qmn/excel-formulas.png" alt="Excel Formulas Example">
+    </section>
+
+    <section class="lesson">
+      <h2>Step 3: Formatting Data</h2>
+      <p>You can make your sheet more professional by formatting.</p>
+      <ul>
+        <li>Bold, italic, underline text</li>
+        <li>Change cell background color</li>
+        <li>Adjust column width and row height</li>
+        <li>Apply number formatting (currency, percentage, date)</li>
+      </ul>
+    </section>
+
+    <section class="lesson">
+      <h2>Step 4: Charts</h2>
+      <p>Visualize your data using charts.</p>
+      <ul>
+        <li><b>Bar Chart</b> → Compare categories</li>
+        <li><b>Line Chart</b> → Show trends over time</li>
+        <li><b>Pie Chart</b> → Show parts of a whole</li>
+      </ul>
+      <img src="https://i.ibb.co/4V7mzYZ/excel-chart.png" alt="Excel Chart Example">
+    </section>
+
+    <section class="lesson">
+      <h2>Step 5: Saving & Sharing</h2>
+      <p>Save your Excel file regularly to avoid data loss. You can save as <b>.xlsx</b> or export to <b>.pdf</b> for sharing.</p>
+    </section>
+
+    <div class="nav-buttons">
+      <a href="pay.html" class="btn back">⬅ Previous</a>
+      <a href="privacy.html" class="btn next">Next ➡</a>
+    </div>
+  </main>
+</body>
+</html>
+
+
