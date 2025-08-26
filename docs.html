@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Google Docs Basics</title>
+  <style>
+   * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: Arial, sans-serif;
+   }
+
+   body {
+     background: #f8f9fc;
+     color: #333;
+     line-height: 1.6;
+   }
+
+   /* Navbar */
+   .navbar {
+     background: rgba(155, 89, 182, 0.7);
+     backdrop-filter: blur(10px);
+     color: white;
+     padding: 20px 50px;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     position: fixed;
+     top: 0;
+     left: 0;
+     right: 0;
+     z-index: 1000;
+     font-size: 18px;
+     height: 70px;
+   }
+
+   .navbar .logo a {
+     color: #fff;
+     font-size: 24px;
+     font-weight: bold;
+     text-decoration: none;
+   }
+
+   .navbar .nav-links {
+     list-style: none;   
+     display: flex;
+     gap: 25px;
+   }
+
+   .navbar .nav-links a {
+     text-decoration: none;
+     color: white;
+     font-size: 18px;
+     font-weight: bold;
+     transition: color 0.3s ease;
+   }
+
+   .navbar .nav-links a:hover {
+     color: #a66ac5;
+   }
+
+   /* Main Course Container */
+   .course-container {
+     max-width: 900px;
+     margin: 100px auto 40px; /* top margin for navbar space */
+     padding: 20px;
+     background: #fff;
+     border-radius: 12px;
+     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+   }
+
+   .course-container h1 {
+     font-size: 28px;
+     margin-bottom: 15px;
+     color: #2c3e50;
+   }
+
+   .intro {
+     font-size: 18px;
+     margin-bottom: 25px;
+     color: #555;
+   }
+
+   .lesson {
+     margin-bottom: 25px;
+   }
+
+   .lesson h2 {
+     font-size: 22px;
+     margin-bottom: 10px;
+     color: #3498db;
+   }
+
+   .lesson p {
+     font-size: 16px;
+     color: #444;
+   }
+
+   .lesson ul {
+     margin-left: 20px;
+     list-style: disc;
+   }
+
+   /* Images */
+   .img-box {
+     text-align: center;
+     margin: 20px 0;
+   }
+
+   .img-box img {
+     width: 80%;
+     max-width: 500px;
+     border-radius: 8px;
+     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+   }
+
+   /* Tips & Quiz boxes */
+   .tips {
+     background: #eaf6ff;
+     border-left: 5px solid #3498db;
+     padding: 15px;
+     margin: 20px 0;
+     border-radius: 8px;
+   }
+
+   .quiz {
+     background: #fff3cd;
+     border-left: 5px solid #ff9800;
+     padding: 15px;
+     margin: 20px 0;
+     border-radius: 8px;
+   }
+
+   /* Navigation buttons */
+   .nav-buttons {
+     display: flex;
+     justify-content: space-between;
+     margin-top: 30px;
+   }
+
+   .btn {
+     padding: 12px 20px;
+     border-radius: 8px;
+     text-decoration: none;
+     font-weight: bold;
+     transition: 0.3s;
+   }
+
+   .btn.back {
+     background: #bdc3c7;
+     color: #2c3e50;
+   }
+
+   .btn.back:hover {
+     background: #95a5a6;
+   }
+
+   .btn.next {
+     background: #3498db;
+     color: white;
+   }
+
+   .btn.next:hover {
+     background: #2980b9;
+   }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo"><a href="index.html">📚 Micro-Courses Platform</a></div>
+      <ul class="nav-links">
+        <li><a href="courses.html">Courses</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="course-container">
+    <h1>📝 Google Docs Basics</h1>
+    <p class="intro">Google Docs is a free online tool that lets you create, edit, and share documents. In this lesson, you’ll learn how to start using it like a pro.</p>
+
+    <section class="lesson">
+      <h2>Step 1: Open Google Docs</h2>
+      <p>Go to <a href="https://docs.google.com" target="_blank">docs.google.com</a> and sign in with your Google account.</p>
+      <div class="img-box">
+        <img src="https://www.lifewire.com/thmb/H0PRnZTjTOF-7ck7uHVaxE_Mp_Y=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/google-docs-site-5c8e649246e0fb0001e07a3e.png" alt="Google Docs Homepage">
+      </div>
+    </section>
+
+    <section class="lesson">
+      <h2>Step 2: Create a New Document</h2>
+      <p>Click on the <b>Blank Document</b> option or choose a template. Templates are useful for resumes, reports, letters, and more.</p>
+      <ul>
+        <li><b>Blank:</b> Start from scratch.</li>
+        <li><b>Template:</b> Pre-formatted layout for specific use cases.</li>
+      </ul>
+      <div class="img-box">
+        <img src="https://i.imgur.com/1pRl4so.png" alt="Create New Document">
+      </div>
+    </section>
+
+    <section class="lesson">
+      <h2>Step 3: Formatting Tools</h2>
+      <p>Google Docs has a toolbar with options like:</p>
+      <ul>
+        <li><b>Bold, Italics, Underline</b></li>
+        <li><b>Font size and color</b></li>
+        <li><b>Lists and bullet points</b></li>
+        <li><b>Alignment and spacing</b></li>
+        <li><b>Insert → Images, Tables, Links</b></li>
+      </ul>
+    </section>
+
+    <section class="lesson">
+      <h2>Step 4: Collaboration</h2>
+      <p>Docs shines when multiple people work together.</p>
+      <ul>
+        <li>Click <b>Share</b> (top right) → Enter email of collaborators.</li>
+        <li>Choose permissions: <b>Viewer</b>, <b>Commenter</b>, <b>Editor</b>.</li>
+        <li>All changes are saved automatically in real-time.</li>
+      </ul>
+    </section>
+
+    <section class="lesson">
+      <h2>Step 5: Saving & Exporting</h2>
+      <p>Your work saves automatically. You can also download the file as:</p>
+      <ul>
+        <li>PDF (.pdf)</li>
+        <li>Microsoft Word (.docx)</li>
+        <li>Plain Text (.txt)</li>
+      </ul>
+    </section>
+
+    <div class="tips">
+      <h3>💡 Pro Tips</h3>
+      <ul>
+        <li>Use <b>Ctrl + Z</b> (Undo) and <b>Ctrl + Y</b> (Redo) to quickly fix mistakes.</li>
+        <li>Enable <b>Offline Mode</b> to edit without internet.</li>
+        <li>Use <b>Version History</b> to see older versions of your file.</li>
+      </ul>
+    </div>
+
+    <div class="quiz">
+      <h3>📝 Quick Quiz</h3>
+      <p><b>Q1:</b> How can you share a document with editing rights?<br>
+      <b>Q2:</b> Which file formats can you export Google Docs into?<br>
+      <b>Q3:</b> Does Docs save files automatically?</p>
+    </div>
+
+    <div class="nav-buttons">
+      <a href="email.html" class="btn back">⬅ Previous</a>
+      <a href="pay.html" class="btn next">Next ➡</a>
+    </div>
+  </main>
+</body>
+</html>
+
+
+    
