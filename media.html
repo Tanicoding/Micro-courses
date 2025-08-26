@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Safe Social Media Use</title>
+  <style>
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: Arial, sans-serif;
+   }
+
+   body {
+     background: #f8f9fc;
+     color: #333;
+     line-height: 1.6;
+   }
+
+/* Navbar */
+.navbar {
+  background: rgba(155, 89, 182, 0.7);
+  backdrop-filter: blur(10px);
+  color: white;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  font-size: 18px;
+  height: 70px;
+}
+
+.navbar .logo a {
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.navbar .nav-links {
+  list-style: none;   
+  display: flex;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar .nav-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.navbar .nav-links a:hover {
+  color: #a66ac5;
+}
+
+/* Responsive tweak */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    height: auto;
+    padding: 15px 20px;
+  }
+  .navbar .nav-links {
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 10px;
+  }
+}
+
+/* Main Course Container */
+.course-container {
+     max-width: 900px;
+     margin: 100px auto 40px; /* top margin for navbar space */
+     padding: 20px;
+     background: #fff;
+     border-radius: 12px;
+     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+   }
+
+   .course-container h1 {
+     font-size: 28px;
+     margin-bottom: 15px;
+     color: #2c3e50;
+   }
+
+   .intro {
+     font-size: 18px;
+     margin-bottom: 25px;
+     color: #555;
+   }
+
+.lesson {
+     margin-bottom: 25px;
+   }
+
+   .lesson h2 {
+     font-size: 22px;
+     margin-bottom: 10px;
+     color: #3498db;
+   }
+
+   .lesson p {
+     font-size: 16px;
+     color: #444;
+   }
+
+   .lesson ul {
+     margin-left: 20px;
+     list-style: disc;
+   }
+
+/* Images */
+.img-box {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.img-box img {
+  width: 80%;
+  max-width: 500px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Tips & Quiz boxes */
+.tips {
+     background: #eaf6ff;
+     border-left: 5px solid #3498db;
+     padding: 15px;
+     margin: 20px 0;
+     border-radius: 8px;
+   }
+
+   .quiz {
+     background: #fff3cd;
+     border-left: 5px solid #ff9800;
+     padding: 15px;
+     margin: 20px 0;
+     border-radius: 8px;
+   }
+
+/* Navigation buttons */
+.nav-buttons {
+     display: flex;
+     justify-content: space-between;
+     margin-top: 30px;
+   }
+
+   .btn {
+     padding: 12px 20px;
+     border-radius: 8px;
+     text-decoration: none;
+     font-weight: bold;
+     transition: 0.3s;
+   }
+
+   .btn.back {
+     background: #bdc3c7;
+     color: #2c3e50;
+   }
+
+   .btn.back:hover {
+     background: #95a5a6;
+   }
+
+   .btn.next {
+     background: #3498db;
+     color: white;
+   }
+
+   .btn.next:hover {
+     background: #2980b9;
+   }
+
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo"><a href="index.html">📚 Micro-Courses Platform</a></div>
+      <ul class="nav-links">
+        <li><a href="courses.html">Courses</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="course-container">
+    <h1>📱 Safe Social Media Use</h1>
+    <p class="intro">Social media can be fun and educational, but it’s important to protect yourself online. Let’s go through the best practices for staying safe while still enjoying your digital life.</p>
+
+    <section class="lesson">
+      <h2>🔒 Step 1: Privacy Settings</h2>
+      <p>Always set your profile to private and carefully select who can view your posts. Most platforms allow you to restrict friend requests, hide your online activity, and limit what strangers see.</p>
+      <img src="https://img.freepik.com/free-vector/secure-login-concept-illustration_114360-4681.jpg" alt="Privacy settings illustration">
+    </section>
+
+    <section class="lesson">
+      <h2>🙅‍♂️ Step 2: Avoid Oversharing</h2>
+      <p>Think before you post! Never share your home address, phone number, financial details, or daily routines. Even seemingly small details can be misused.</p>
+      <img src="https://img.freepik.com/free-vector/privacy-concept-illustration_114360-2144.jpg" alt="Oversharing risks illustration">
+    </section>
+
+    <section class="lesson">
+      <h2>⚠️ Step 3: Identify Scams & Fake Accounts</h2>
+      <p>Be alert to suspicious links, “too good to be true” offers, or unknown people asking for money. Fake accounts often use stolen profile pictures or generic names.</p>
+      <img src="https://img.freepik.com/free-vector/phishing-concept-illustration_114360-7861.jpg" alt="Social media scam illustration">
+    </section>
+
+    <section class="lesson">
+      <h2>🛡️ Step 4: Use Strong Passwords</h2>
+      <p>Create unique passwords with a mix of letters, numbers, and symbols. Avoid using your name or birthday. Enable <b>two-factor authentication</b> (2FA) for extra security.</p>
+    </section>
+
+    <section class="lesson">
+      <h2>🤝 Step 5: Handle Cyberbullying</h2>
+      <p>If you face bullying online, <b>don’t respond</b>. Block/report the offender and inform a trusted adult or authority. Remember—it’s not your fault, and help is available.</p>
+      <img src="https://img.freepik.com/free-vector/cyber-bullying-concept-illustration_114360-13144.jpg" alt="Cyberbullying prevention">
+    </section>
+
+    <section class="lesson">
+      <h2>⏳ Step 6: Manage Screen Time</h2>
+      <p>Too much social media can affect your focus and sleep. Set healthy time limits and take breaks to protect your mental health.</p>
+    </section>
+
+    <section class="lesson">
+      <h2>🚨 Step 7: Report & Block</h2>
+      <p>If someone sends inappropriate messages or threats, use the <b>report</b> and <b>block</b> options available on every platform. It’s better to be safe than sorry.</p>
+    </section>
+
+    <div class="nav-buttons">
+      <a href="privacy.html" class="btn back">⬅ Previous</a>
+      <a href="courses.html" class="btn next">🏁 Finish</a>
+    </div>
+  </main>
+</body>
+</html>
