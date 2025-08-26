@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Settings</title>
+  <style>
+   * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: Arial, sans-serif;
+   }
+
+   body {
+     background: #f8f9fc;
+     color: #333;
+     line-height: 1.6;
+   }
+
+/* Navbar */
+.navbar {
+  background: rgba(155, 89, 182, 0.7);
+  backdrop-filter: blur(10px);
+  color: white;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  font-size: 18px;
+  height: 70px;
+}
+
+.navbar .logo a {
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.navbar .nav-links {
+  list-style: none;   
+  display: flex;
+  gap: 25px;
+}
+
+ .navbar .nav-links a {
+     text-decoration: none;
+     color: white;
+     font-size: 18px;
+     font-weight: bold;
+     transition: color 0.3s ease;
+   }
+
+
+.navbar .nav-links a:hover {
+  color: #a66ac5;
+}
+
+/* Main Course Container */
+.course-container {
+     max-width: 900px;
+     margin: 100px auto 40px; /* top margin for navbar space */
+     padding: 20px;
+     background: #fff;
+     border-radius: 12px;
+     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+   }
+
+   .course-container h1 {
+     font-size: 28px;
+     margin-bottom: 15px;
+     color: #2c3e50;
+   }
+
+   .intro {
+     font-size: 18px;
+     margin-bottom: 25px;
+     color: #555;
+   }
+
+.lesson {
+     margin-bottom: 25px;
+   }
+
+   .lesson h2 {
+     font-size: 22px;
+     margin-bottom: 10px;
+     color: #3498db;
+   }
+
+   .lesson p {
+     font-size: 16px;
+     color: #444;
+   }
+
+   .lesson ul {
+     margin-left: 20px;
+     list-style: disc;
+   }
+
+/* Images */
+.img-box {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.img-box img {
+  width: 80%;
+  max-width: 500px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Tips & Quiz boxes */
+.tips {
+     background: #eaf6ff;
+     border-left: 5px solid #3498db;
+     padding: 15px;
+     margin: 20px 0;
+     border-radius: 8px;
+   }
+
+   .quiz {
+     background: #fff3cd;
+     border-left: 5px solid #ff9800;
+     padding: 15px;
+     margin: 20px 0;
+     border-radius: 8px;
+   }
+
+/* Navigation buttons */
+.nav-buttons {
+     display: flex;
+     justify-content: space-between;
+     margin-top: 30px;
+   }
+
+   .btn {
+     padding: 12px 20px;
+     border-radius: 8px;
+     text-decoration: none;
+     font-weight: bold;
+     transition: 0.3s;
+   }
+
+   .btn.back {
+     background: #bdc3c7;
+     color: #2c3e50;
+   }
+
+   .btn.back:hover {
+     background: #95a5a6;
+   }
+
+   .btn.next {
+     background: #3498db;
+     color: white;
+   }
+
+   .btn.next:hover {
+     background: #2980b9;
+   }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo"><a href="index.html">📚 Micro-Courses Platform</a></div>
+      <ul class="nav-links">
+        <li><a href="courses.html">Courses</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="course-container">
+    <h1>🔒 Privacy Settings</h1>
+    <p class="intro">This lesson explains how to protect your online accounts with proper privacy settings. Taking small steps can save you from identity theft, scams, and hacking attempts.</p>
+
+    <section class="lesson">
+      <h2>Step 1: Strong Passwords</h2>
+      <p>Use unique, strong passwords with a mix of letters, numbers, and symbols. Avoid using personal details like birthdays or names.</p>
+      <ul class="tips">
+        <li>Use at least 12 characters.</li>
+        <li>Try a password manager to remember them.</li>
+        <li>Never reuse passwords across sites.</li>
+      </ul>
+      <div class="img-box">
+        <img src="https://images.unsplash.com/photo-1605902711622-cfb43c4437b5" alt="Strong Passwords">
+      </div>
+    </section>
+
+    <section class="lesson">
+      <h2>Step 2: Two-Factor Authentication</h2>
+      <p>Enable 2FA on all important accounts (email, banking, social media). This adds an extra layer of security even if someone knows your password.</p>
+      <ul class="tips">
+        <li>Prefer authenticator apps over SMS for more security.</li>
+        <li>Enable backup codes in case you lose your phone.</li>
+      </ul>
+      <div class="img-box">
+        <img src="https://images.unsplash.com/photo-1633265486064-086b2211a2a6" alt="Two-Factor Authentication">
+      </div>
+    </section>
+
+    <section class="lesson">
+      <h2>Step 3: App Permissions</h2>
+      <p>Many apps request access to data they don’t really need. Review app permissions regularly and disable unnecessary access to your data.</p>
+      <ul class="tips">
+        <li>Check permissions for camera, location, and microphone.</li>
+        <li>Disable background data usage for untrusted apps.</li>
+      </ul>
+      <div class="img-box">
+        <img src="https://images.unsplash.com/photo-1605902711622-56aa8f3f3f5f" alt="App Permissions">
+      </div>
+    </section>
+
+    <section class="lesson">
+      <h2>Step 4: Social Media Privacy</h2>
+      <p>Social media can reveal more about you than you think. Adjust your privacy settings to control who can see your posts and personal details.</p>
+      <ul class="tips">
+        <li>Keep your profiles private when possible.</li>
+        <li>Limit what personal information is visible.</li>
+        <li>Be mindful of what you share publicly.</li>
+      </ul>
+      <div class="img-box">
+        <img src="https://images.unsplash.com/photo-1549924231-f129b911e442" alt="Social Media Privacy">
+      </div>
+    </section>
+
+    <section class="lesson">
+      <h2>Step 5: Regular Account Checkups</h2>
+      <p>Periodically check your accounts for suspicious activity. Many services show login history and active sessions.</p>
+      <ul class="tips">
+        <li>Log out of devices you don’t use anymore.</li>
+        <li>Change passwords if you suspect unusual activity.</li>
+      </ul>
+      <div class="img-box">
+        <img src="https://images.unsplash.com/photo-1614064643536-1f24e6e8f9e5" alt="Account Security Check">
+      </div>
+    </section>
+
+    <div class="nav-buttons">
+      <a href="excel.html" class="btn back">⬅ Previous</a>
+      <a href="media.html" class="btn next">Next ➡</a>
+    </div>
+  </main>
+</body>
+</html>
+
+
+
